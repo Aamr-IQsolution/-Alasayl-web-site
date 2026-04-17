@@ -11,10 +11,33 @@ import Button from "@/components/ui/Button";
 import Loading from "@/components/ui/Loading";
 
 const contactSchema = z.object({
-  name: z.string().min(2, "forms.quote.validation.name"),
-  email: z.string().email("forms.quote.validation.email"),
-  phone: z.string().min(1, "forms.quote.validation.required"),
-  message: z.string().min(10, "forms.contact.validation.message"),
+  name: z
+    .string()
+    .min(2, "forms.quote.validation.name")
+    .max(100, "forms.quote.validation.tooLong")
+    .regex(/^[a-zA-Z\s\u0600-\u06FF'-]+$/, "forms.quote.validation.nameInvalid")
+    .trim(),
+
+  email: z
+    .string()
+    .trim()
+    .max(255, "forms.quote.validation.tooLong")
+    .email("forms.quote.validation.email")
+    .transform((s) => s.toLowerCase()),
+
+  phone: z
+    .string()
+    .min(10, "forms.quote.validation.phoneShort")
+    .max(20, "forms.quote.validation.phoneLong")
+    .regex(/^[\d\s+\-()]+$/, "forms.quote.validation.phoneInvalid")
+    .trim(),
+
+  message: z
+    .string()
+    .min(10, "forms.contact.validation.messageShort")
+    .max(1000, "forms.contact.validation.messageMax")
+    .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-!?()'"]+$/, "forms.contact.validation.messageInvalid")
+    .trim(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;

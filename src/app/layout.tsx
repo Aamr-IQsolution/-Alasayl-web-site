@@ -17,6 +17,11 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: "Alasayl Transport",
   description: "Professioneel goederenvervoer in Nederland.",
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
 };
 
 export default function RootLayout({

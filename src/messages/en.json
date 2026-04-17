@@ -222,12 +222,27 @@
       },
       "validation": {
         "name": "Name is too short",
+        "tooLong": "Text is too long",
+        "nameInvalid": "Name contains invalid characters",
         "email": "Invalid email address",
         "required": "This field is required",
         "address": "Address is too short",
+        "addressInvalid": "Address contains invalid characters",
         "cargo": "Cargo type is too short",
+        "invalidChars": "Invalid characters in this field",
         "location": "Location is too short",
-        "date": "Date must be in the future"
+        "locationInvalid": "Location contains invalid characters",
+        "date": "Date must be in the future",
+        "dateFuture": "Date must be today or in the future",
+        "phoneShort": "Phone number is too short",
+        "phoneLong": "Phone number is too long",
+        "phoneInvalid": "Invalid phone number format",
+        "weightMin": "Weight must be at least 1 kg",
+        "weightMax": "Weight must not exceed 50,000 kg",
+        "weightInteger": "Enter a whole number for weight",
+        "serviceInvalid": "Invalid service type",
+        "notesMax": "Notes are too long",
+        "notesInvalid": "Notes contain invalid characters"
       }
     },
     "contact": {
@@ -242,7 +257,10 @@
         "message": "Your Message"
       },
       "validation": {
-        "message": "Message is too short"
+        "message": "Message is too short",
+        "messageShort": "Message is too short",
+        "messageMax": "Message is too long",
+        "messageInvalid": "Message contains invalid characters"
       }
     },
     "career": {
@@ -335,8 +353,24 @@
       "coverLetter": "Cover Letter (Optional)",
       "cvUpload": "Upload CV (PDF, max 5MB)",
       "submit": "Apply Now",
+      "submitting": "Sending...",
       "success": "Your application has been received! We will contact you soon.",
-      "error": "Something went wrong. Please try again."
+      "error": "Something went wrong. Please try again.",
+      "fileTooLarge": "File size must be less than 5MB",
+      "fileTypePDF": "Only PDF files are allowed",
+      "validation": {
+        "name": "Invalid name (2–100 characters)",
+        "nameInvalid": "Name contains invalid characters",
+        "email": "Invalid email address",
+        "emailLength": "Email address is too long",
+        "phoneShort": "Phone number is too short",
+        "phoneLong": "Phone number is too long",
+        "phoneInvalid": "Invalid phone number format",
+        "position": "Invalid position",
+        "coverLetter": "Cover letter is too long",
+        "coverLetterInvalid": "Cover letter contains invalid characters",
+        "cvRequired": "Please upload your CV (PDF)"
+      }
     }
   }
 }

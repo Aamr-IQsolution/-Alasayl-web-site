@@ -12,19 +12,88 @@ import Button from "@/components/ui/Button";
 import Loading from "@/components/ui/Loading";
 
 const quoteSchema = z.object({
-  name: z.string().min(2, "validation.name"),
-  email: z.string().email("validation.email"),
-  phone: z.string().min(1, "validation.required"),
-  address: z.string().min(5, "validation.address"),
-  cargoType: z.string().min(3, "validation.cargo"),
-  weight: z.coerce.number().min(1, "validation.required"),
-  pickupLocation: z.string().min(5, "validation.location"),
-  deliveryLocation: z.string().min(5, "validation.location"),
-  transportDate: z.string().refine((date) => new Date(date) > new Date(), {
-    message: "validation.date",
+  name: z
+    .string()
+    .min(2, "validation.name")
+    .max(100, "validation.tooLong")
+    .regex(/^[a-zA-Z\s\u0600-\u06FF'-]+$/, "validation.nameInvalid")
+    .trim(),
+
+  email: z
+    .string()
+    .trim()
+    .max(255, "validation.tooLong")
+    .email("validation.email")
+    .transform((s) => s.toLowerCase()),
+
+  phone: z
+    .string()
+    .min(10, "validation.phoneShort")
+    .max(20, "validation.phoneLong")
+    .regex(/^[\d\s+\-()]+$/, "validation.phoneInvalid")
+    .trim(),
+
+  address: z
+    .string()
+    .min(5, "validation.address")
+    .max(200, "validation.tooLong")
+    .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-]+$/, "validation.addressInvalid")
+    .trim(),
+
+  cargoType: z
+    .string()
+    .min(3, "validation.cargo")
+    .max(100, "validation.tooLong")
+    .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-]+$/, "validation.invalidChars")
+    .trim(),
+
+  weight: z.coerce
+    .number({
+      invalid_type_error: "validation.weightInteger",
+    })
+    .min(1, "validation.weightMin")
+    .max(50000, "validation.weightMax")
+    .int("validation.weightInteger"),
+
+  pickupLocation: z
+    .string()
+    .min(5, "validation.location")
+    .max(200, "validation.tooLong")
+    .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-]+$/, "validation.locationInvalid")
+    .trim(),
+
+  deliveryLocation: z
+    .string()
+    .min(5, "validation.location")
+    .max(200, "validation.tooLong")
+    .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-]+$/, "validation.locationInvalid")
+    .trim(),
+
+  transportDate: z.string().refine(
+    (date) => {
+      const selectedDate = new Date(date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      selectedDate.setHours(0, 0, 0, 0);
+      return selectedDate >= today;
+    },
+    { message: "validation.dateFuture" }
+  ),
+
+  serviceType: z.enum(["normal", "urgent"], {
+    message: "validation.serviceInvalid",
   }),
-  serviceType: z.enum(["normal", "urgent"]),
-  notes: z.string().max(500).optional(),
+
+  notes: z
+    .union([
+      z.literal(""),
+      z
+        .string()
+        .max(500, "validation.notesMax")
+        .regex(/^[a-zA-Z0-9\s\u0600-\u06FF,.\-!?()'"]+$/, "validation.notesInvalid")
+        .trim(),
+    ])
+    .optional(),
 });
 
 type QuoteFormData = z.infer<typeof quoteSchema>;

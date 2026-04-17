@@ -42,6 +42,7 @@ export default function Footer() {
                 href="mailto:alasayltransport@gmail.com"
                 aria-label="Email"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition-colors duration-200 hover:border-primary hover:text-primary"
+                suppressHydrationWarning
               >
                 <Mail className="h-4 w-4" />
               </a>
@@ -96,7 +97,11 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="mailto:alasayltransport@gmail.com" className="hover:text-primary">
+                <a 
+                  href="mailto:alasayltransport@gmail.com" 
+                  className="hover:text-primary"
+                  suppressHydrationWarning
+                >
                   alasayltransport@gmail.com
                 </a>
               </li>
@@ -108,7 +113,7 @@ export default function Footer() {
 
       <div className="border-t border-zinc-200">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Alasayl Transport. All rights reserved.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} Alasayl Transport. All rights reserved.</p>
           <p>KvK: 93558422</p>
         </div>
       </div>

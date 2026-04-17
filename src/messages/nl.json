@@ -222,12 +222,27 @@
       },
       "validation": {
         "name": "Naam is te kort",
+        "tooLong": "Tekst is te lang",
+        "nameInvalid": "Naam bevat ongeldige tekens",
         "email": "Ongeldig e-mailadres",
         "required": "Dit veld is verplicht",
         "address": "Adres is te kort",
+        "addressInvalid": "Adres bevat ongeldige tekens",
         "cargo": "Type goederen is te kort",
+        "invalidChars": "Ongeldige tekens in dit veld",
         "location": "Locatie is te kort",
-        "date": "Datum moet in de toekomst liggen"
+        "locationInvalid": "Locatie bevat ongeldige tekens",
+        "date": "Datum moet in de toekomst liggen",
+        "dateFuture": "Datum moet vandaag of in de toekomst zijn",
+        "phoneShort": "Telefoonnummer is te kort",
+        "phoneLong": "Telefoonnummer is te lang",
+        "phoneInvalid": "Ongeldig telefoonnummer",
+        "weightMin": "Gewicht moet minimaal 1 kg zijn",
+        "weightMax": "Gewicht mag maximaal 50.000 kg zijn",
+        "weightInteger": "Voer een geheel getal in voor het gewicht",
+        "serviceInvalid": "Ongeldig servicetype",
+        "notesMax": "Opmerkingen zijn te lang",
+        "notesInvalid": "Opmerkingen bevatten ongeldige tekens"
       }
     },
     "contact": {
@@ -242,7 +257,10 @@
         "message": "Uw Bericht"
       },
       "validation": {
-        "message": "Bericht is te kort"
+        "message": "Bericht is te kort",
+        "messageShort": "Bericht is te kort",
+        "messageMax": "Bericht is te lang",
+        "messageInvalid": "Bericht bevat ongeldige tekens"
       }
     },
     "career": {
@@ -335,8 +353,24 @@
       "coverLetter": "Motivatiebrief (optioneel)",
       "cvUpload": "Upload CV (PDF, max 5MB)",
       "submit": "Solliciteer Nu",
+      "submitting": "Verzenden...",
       "success": "Uw sollicitatie is ontvangen! We nemen spoedig contact op.",
-      "error": "Er ging iets mis. Probeer opnieuw."
+      "error": "Er ging iets mis. Probeer opnieuw.",
+      "fileTooLarge": "Bestand mag maximaal 5MB zijn",
+      "fileTypePDF": "Alleen PDF-bestanden zijn toegestaan",
+      "validation": {
+        "name": "Ongeldige naam (2–100 tekens)",
+        "nameInvalid": "Naam bevat ongeldige tekens",
+        "email": "Ongeldig e-mailadres",
+        "emailLength": "E-mailadres is te lang",
+        "phoneShort": "Telefoonnummer is te kort",
+        "phoneLong": "Telefoonnummer is te lang",
+        "phoneInvalid": "Ongeldig telefoonnummer",
+        "position": "Ongeldige functie",
+        "coverLetter": "Motivatiebrief is te lang",
+        "coverLetterInvalid": "Motivatiebrief bevat ongeldige tekens",
+        "cvRequired": "Upload uw CV (PDF)"
+      }
     }
   }
 }

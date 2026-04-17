@@ -103,12 +103,14 @@ export default function Header() {
           <a
             href="https://wa.me/31622665522"
             className="inline-flex items-center justify-center rounded-lg bg-secondary px-3 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-secondary-dark"
+            suppressHydrationWarning
           >
             WhatsApp
           </a>
           <a
             href="tel:+31622665522"
             className="inline-flex items-center justify-center rounded-lg border border-primary px-3 py-2 text-sm font-medium text-primary transition-colors duration-200 hover:bg-primary/10"
+            suppressHydrationWarning
           >
             +31 622 665 522
           </a>

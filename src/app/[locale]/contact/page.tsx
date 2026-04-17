@@ -33,7 +33,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-zinc-900">{t("info.phone.title")}</h3>
-                <p className="text-gray-600">+31 6 2266 5522</p>
+                <p className="text-gray-600" suppressHydrationWarning>+31 6 2266 5522</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-zinc-900">{t("info.email.title")}</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600" suppressHydrationWarning>
                   <a
                     href="mailto:alasayltransport@gmail.com"
                     className="hover:text-primary transition-colors"
@@ -72,12 +72,14 @@ export default function ContactPage() {
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base bg-primary text-white hover:bg-primary-dark focus-visible:ring-primary/40"
+              suppressHydrationWarning
             >
               {t("buttons.whatsapp")}
             </a>
             <a 
               href="tel:+31622665522" 
               className="inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base border border-primary text-primary hover:bg-primary/10 focus-visible:ring-primary/30"
+              suppressHydrationWarning
             >
               {t("buttons.call")}
             </a>
