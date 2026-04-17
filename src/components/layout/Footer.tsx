@@ -39,7 +39,7 @@ export default function Footer() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="mailto:fissalgghh@gmail.com"
+                href="mailto:alasayltransport@gmail.com"
                 aria-label="Email"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition-colors duration-200 hover:border-primary hover:text-primary"
               >
@@ -96,8 +96,8 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="mailto:fissalgghh@gmail.com" className="hover:text-primary">
-                  fissalgghh@gmail.com
+                <a href="mailto:alasayltransport@gmail.com" className="hover:text-primary">
+                  alasayltransport@gmail.com
                 </a>
               </li>
               <li>Mon - Sat: 08:00 - 18:00</li>

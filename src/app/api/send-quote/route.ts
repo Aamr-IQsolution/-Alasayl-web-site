@@ -60,7 +60,8 @@ export async function POST(request: NextRequest) {
     
     return NextResponse.json({ success: true, data })
     
-  } catch {
+  } catch (err) {
+    console.error('[send-quote]', err)
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

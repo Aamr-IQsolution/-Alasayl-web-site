@@ -116,21 +116,66 @@
   "servicesPage": {
     "title": "Onze Transportdiensten",
     "subtitle": "Wij bieden een breed scala aan logistieke oplossingen voor uw bedrijf",
+    "featuresHeading": "Kenmerken:",
+    "vehiclesHeading": "Voertuigen:",
     "packages": {
       "title": "Pakketbezorging",
-      "description": "Betrouwbare bezorging van pakketten met focus op snelheid en veiligheid. Wij zorgen ervoor dat uw pakketten met de grootste zorg worden behandeld en op tijd aankomen."
+      "description": "Betrouwbare bezorging van pakketten met focus op snelheid en veiligheid. Wij zorgen ervoor dat uw pakketten met de grootste zorg worden behandeld en op tijd aankomen.",
+      "features": [
+        "Same-day levering mogelijk",
+        "Track & trace systeem",
+        "Zorgvuldige behandeling",
+        "Flexibele ophaal- en aflevertijden"
+      ],
+      "vehicles": "Mercedes-Benz Vito en Sprinter"
     },
     "freight": {
       "title": "Commercieel Vrachtvervoer",
-      "description": "Professioneel transport van commerciële goederen en pallets. Onze chauffeurs zijn ervaren in het veilig vervoeren van zware en volumineuze vrachten."
+      "description": "Professioneel transport van commerciële goederen en pallets. Onze chauffeurs zijn ervaren in het veilig vervoeren van zware en volumineuze vrachten.",
+      "features": [
+        "Palletvervoer",
+        "Laden en lossen service",
+        "B2B oplossingen",
+        "Volume zendingen"
+      ],
+      "vehicles": "Mercedes-Benz Sprinter v4"
     },
     "newspapers": {
       "title": "Krantenlevering",
-      "description": "Tijdige distributie van kranten en tijdschriften, elke dag opnieuw. Wij begrijpen het belang van vroege levering en garanderen een betrouwbare nachtdistributie."
+      "description": "Tijdige distributie van kranten en tijdschriften, elke dag opnieuw. Wij begrijpen het belang van vroege levering en garanderen een betrouwbare nachtdistributie.",
+      "features": [
+        "Nachtdistributie",
+        "Vroege ochtendlevering",
+        "Hoge betrouwbaarheid",
+        "Dagelijkse ritten"
+      ],
+      "vehicles": "Vloot van 15+ voertuigen"
     },
     "urgent": {
       "title": "Spoedleveringen",
-      "description": "Directe actie voor uw meest dringende zendingen. Onze koeriers staan 24/7 klaar om uw goederen zonder tussenstops direct naar de bestemming te brengen."
+      "description": "Directe actie voor uw meest dringende zendingen. Onze koeriers staan 24/7 klaar om uw goederen zonder tussenstops direct naar de bestemming te brengen.",
+      "features": [
+        "Directe afhaling",
+        "Geen tussenstops",
+        "24/7 bereikbaarheid",
+        "Door heel Nederland"
+      ],
+      "vehicles": "Snelste beschikbare voertuig"
+    },
+    "hoursCard": {
+      "title": "Openingstijden",
+      "weekdays": "Ma-Za: 07:00 - 18:00",
+      "sunday": "Zondag: Gesloten"
+    },
+    "coverageCard": {
+      "title": "Dekking",
+      "line1": "Heel Limburg",
+      "line2": "Hele Nederland"
+    },
+    "goodsCard": {
+      "title": "Type Goederen",
+      "commercial": "✅ Commerciële goederen",
+      "noMoves": "❌ Geen verhuizingen"
     }
   },
   "fleetPage": {
@@ -247,7 +292,13 @@
         "weekdays": "Ma-Za: 07:00 - 18:00",
         "sunday": "Zondag: Gesloten"
       }
-    }
+    },
+    "buttons": {
+      "whatsapp": "WhatsApp",
+      "call": "Bel Direct"
+    },
+    "quoteTitle": "Vraag Offerte Aan",
+    "messageTitle": "Stuur Een Bericht"
   },
   "careersPage": {
     "title": "Werken Bij Alasayl",

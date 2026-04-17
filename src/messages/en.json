@@ -116,21 +116,66 @@
   "servicesPage": {
     "title": "Our Transport Services",
     "subtitle": "We offer a wide range of logistics solutions for your business",
+    "featuresHeading": "Features:",
+    "vehiclesHeading": "Vehicles:",
     "packages": {
       "title": "Package Delivery",
-      "description": "Reliable delivery of packages with focus on speed and safety. We ensure that your packages are handled with the utmost care and arrive on time."
+      "description": "Reliable delivery of packages with focus on speed and safety. We ensure that your packages are handled with the utmost care and arrive on time.",
+      "features": [
+        "Same-day delivery available",
+        "Full track & trace",
+        "Careful handling",
+        "Flexible pickup and delivery times"
+      ],
+      "vehicles": "Mercedes-Benz Vito and Sprinter"
     },
     "freight": {
       "title": "Commercial Freight",
-      "description": "Professional transport of commercial goods and pallets. Our drivers are experienced in safely transporting heavy and voluminous freights."
+      "description": "Professional transport of commercial goods and pallets. Our drivers are experienced in safely transporting heavy and voluminous freights.",
+      "features": [
+        "Pallet transport",
+        "Loading and unloading service",
+        "B2B solutions",
+        "Large-volume shipments"
+      ],
+      "vehicles": "Mercedes-Benz Sprinter v4"
     },
     "newspapers": {
       "title": "Newspaper Delivery",
-      "description": "Timely distribution of newspapers and magazines, every single day. We understand the importance of early delivery and guarantee reliable night distribution."
+      "description": "Timely distribution of newspapers and magazines, every single day. We understand the importance of early delivery and guarantee reliable night distribution.",
+      "features": [
+        "Night distribution",
+        "Early morning delivery",
+        "High reliability",
+        "Daily scheduled routes"
+      ],
+      "vehicles": "Fleet of 15+ vehicles"
     },
     "urgent": {
       "title": "Urgent Shipments",
-      "description": "Immediate action for your most urgent deliveries. Our couriers are available 24/7 to bring your goods directly to the destination without any intermediate stops."
+      "description": "Immediate action for your most urgent deliveries. Our couriers are available 24/7 to bring your goods directly to the destination without any intermediate stops.",
+      "features": [
+        "Direct pickup",
+        "No intermediate stops",
+        "24/7 availability",
+        "Coverage throughout the Netherlands"
+      ],
+      "vehicles": "Fastest available vehicle"
+    },
+    "hoursCard": {
+      "title": "Opening hours",
+      "weekdays": "Mon–Sat: 07:00 - 18:00",
+      "sunday": "Sunday: Closed"
+    },
+    "coverageCard": {
+      "title": "Coverage",
+      "line1": "All of Limburg",
+      "line2": "Nationwide in the Netherlands"
+    },
+    "goodsCard": {
+      "title": "Type of goods",
+      "commercial": "✅ Commercial goods",
+      "noMoves": "❌ No household removals"
     }
   },
   "fleetPage": {
@@ -247,7 +292,13 @@
         "weekdays": "Mon-Sat: 07:00 - 18:00",
         "sunday": "Sunday: Closed"
       }
-    }
+    },
+    "buttons": {
+      "whatsapp": "WhatsApp",
+      "call": "Call Direct"
+    },
+    "quoteTitle": "Request a Quote",
+    "messageTitle": "Send us a message"
   },
   "careersPage": {
     "title": "Join Our Team",

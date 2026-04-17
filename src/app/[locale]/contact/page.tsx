@@ -43,7 +43,14 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-zinc-900">{t("info.email.title")}</h3>
-                <p className="text-gray-600">info@alasayltransport.nl</p>
+                <p className="text-gray-600">
+                  <a
+                    href="mailto:alasayltransport@gmail.com"
+                    className="hover:text-primary transition-colors"
+                  >
+                    alasayltransport@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -90,7 +97,7 @@ export default function ContactPage() {
       </section>
 
       {/* 2. Quote Request Form */}
-      <section className="mb-24 py-16 bg-zinc-50 rounded-3xl px-6 md:px-12 border border-zinc-100">
+      <section id="quote" className="mb-24 scroll-mt-24 py-16 bg-zinc-50 rounded-3xl px-6 md:px-12 border border-zinc-100">
         <h2 className="text-3xl font-bold text-center text-zinc-900 mb-12">
           {t("quoteTitle")}
         </h2>

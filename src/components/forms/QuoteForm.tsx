@@ -34,6 +34,7 @@ export default function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [errorDetail, setErrorDetail] = useState<string | null>(null);
 
   const {
     register,
@@ -51,6 +52,7 @@ export default function QuoteForm() {
     setIsSubmitting(true);
     setSuccess(false);
     setError(false);
+    setErrorDetail(null);
     try {
       const res = await fetch("/api/send-quote", {
         method: "POST",
@@ -58,11 +60,22 @@ export default function QuoteForm() {
         body: JSON.stringify(data),
       });
 
+      const json = (await res.json().catch(() => null)) as {
+        error?: string | { message?: string };
+      } | null;
+
       if (res.ok) {
         setSuccess(true);
         reset();
       } else {
         setError(true);
+        const msg =
+          typeof json?.error === "object" && json.error?.message
+            ? json.error.message
+            : typeof json?.error === "string"
+              ? json.error
+              : null;
+        setErrorDetail(msg);
       }
     } catch {
       setError(true);
@@ -93,6 +106,9 @@ export default function QuoteForm() {
       {error && (
         <div className="mb-6 rounded-lg bg-red-50 p-4 text-sm text-red-700 border border-red-200">
           ❌ {t("error")}
+          {errorDetail && (
+            <p className="mt-2 text-xs text-red-600/90 whitespace-pre-wrap">{errorDetail}</p>
+          )}
         </div>
       )}
 

@@ -2,10 +2,14 @@
 
 import { useTranslations } from "next-intl";
 import { MessageCircle, Phone } from "lucide-react";
-import Button from "@/components/ui/Button";
+import { Link } from "@/navigation";
+import clsx from "clsx";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+
+  const btnBase =
+    "inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base w-full sm:w-auto";
 
   return (
     <section className="relative flex min-h-[600px] flex-col items-center justify-center bg-gradient-to-b from-primary to-primary-dark px-4 py-20 text-center md:min-h-screen md:px-8">
@@ -18,22 +22,24 @@ export default function HeroSection() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button
-            variant="secondary"
-            size="lg"
-            className="w-full sm:w-auto"
-            onClick={() => (window.location.href = "#quote")}
+          <Link
+            href="/contact#quote"
+            className={clsx(
+              btnBase,
+              "bg-secondary text-white hover:bg-secondary-dark focus-visible:ring-secondary/40"
+            )}
           >
             {t("ctaPrimary")}
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="w-full border-white text-white hover:bg-white/10 sm:w-auto"
-            onClick={() => (window.location.href = "#services")}
+          </Link>
+          <Link
+            href="/about"
+            className={clsx(
+              btnBase,
+              "border border-white text-white hover:bg-white/10 focus-visible:ring-white/30"
+            )}
           >
             {t("ctaSecondary")}
-          </Button>
+          </Link>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 sm:flex-row sm:gap-8">
