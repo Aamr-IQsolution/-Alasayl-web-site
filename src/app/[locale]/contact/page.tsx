@@ -60,14 +60,21 @@ export default function ContactPage() {
             </div>
           </div>
           
-          {/* Contact Buttons */}
           <div className="flex flex-wrap gap-4 mt-12">
-            <Button as="a" href="https://wa.me/31622665522" target="_blank" variant="primary">
+            <a 
+              href="https://wa.me/31622665522" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base bg-primary text-white hover:bg-primary-dark focus-visible:ring-primary/40"
+            >
               {t("buttons.whatsapp")}
-            </Button>
-            <Button as="a" href="tel:+31622665522" variant="outline">
+            </a>
+            <a 
+              href="tel:+31622665522" 
+              className="inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base border border-primary text-primary hover:bg-primary/10 focus-visible:ring-primary/30"
+            >
               {t("buttons.call")}
-            </Button>
+            </a>
           </div>
         </div>
         

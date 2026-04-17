@@ -7,7 +7,6 @@ import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 type SupportedLocale = "nl" | "ar" | "en";
 
 export default function Footer() {
-  const locale = useLocale() as SupportedLocale;
 
   const quickLinks = [
     { label: "Home", href: "/" },
