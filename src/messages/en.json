@@ -1,0 +1,291 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "fleet": "Fleet",
+    "contact": "Contact",
+    "careers": "Careers"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us"
+  },
+  "newsBar": {
+    "item1": "Reliable transport across the Netherlands",
+    "item2": "Fast quote response within 24 hours",
+    "item3": "24/7 support for business clients"
+  },
+  "hero": {
+    "title": "Reliable Freight Transport in the Netherlands",
+    "subtitle": "Professional transport services with more than 15 vehicles, specializing in package delivery and freight transport.",
+    "ctaPrimary": "Request Quote",
+    "ctaSecondary": "About Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "viewAll": "View All Services",
+    "packages": {
+      "title": "Package Delivery",
+      "description": "Fast and reliable package delivery for businesses and individuals"
+    },
+    "freight": {
+      "title": "Commercial Transport",
+      "description": "Professional freight transport for commercial goods"
+    },
+    "newspapers": {
+      "title": "Newspaper Delivery",
+      "description": "Daily distribution of newspapers and magazines"
+    },
+    "urgent": {
+      "title": "Urgent Deliveries",
+      "description": "Same-day service for urgent deliveries"
+    }
+  },
+  "stats": {
+    "vehicles": {
+      "label": "Vehicles",
+      "description": "in the fleet"
+    },
+    "amazon": {
+      "label": "Years",
+      "description": "with Amazon"
+    },
+    "days": {
+      "label": "Days",
+      "description": "per week"
+    },
+    "partners": {
+      "label": "Partners",
+      "description": "Main partners"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "We work with leading companies",
+    "amazon": {
+      "description": "Partnership since 2 years with Amazon - full fleet of vehicles - long experience in professional problem solving"
+    },
+    "dhl": {
+      "description": "Reliable partner for fast transport services"
+    },
+    "spoota": {
+      "description": "Development of Lead-the-way-yz app specially for Alasayl Transport"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonial1": {
+      "text": "Excellent service! Alasayl Transport is always reliable and on time. Very professional team."
+    },
+    "testimonial2": {
+      "text": "We have been working together for years and are very satisfied. Fast communication and flexible solutions."
+    },
+    "testimonial3": {
+      "text": "Reliable partner for our company. Always correct handling and friendly drivers."
+    }
+  },
+  "fleet": {
+    "title": "Our Fleet",
+    "subtitle": "More than 15 modern vehicles for all your transport needs",
+    "viewAll": "View Full Fleet"
+  },
+  "about": {
+    "title": "About Alasayl Transport",
+    "subtitle": "Reliable transport company based in Echt, Limburg",
+    "company": {
+      "title": "About Us",
+      "description": "Alasayl Transport is a professional transport company based in Echt, Limburg. With more than 15 vehicles and years of experience, we provide reliable freight transport services across the Netherlands."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Delivering reliable and efficient transport services that exceed our customers' expectations."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To become a leading transport partner in the Netherlands and beyond, with expansion into international markets."
+    },
+    "fleet": {
+      "title": "Our Fleet"
+    },
+    "expansion": {
+      "title": "Expansion into New Markets",
+      "description": "Alasayl Transport is expanding! We have started providing our services in the Middle East and Saudi Arabia, strengthening our international presence."
+    }
+  },
+  "servicesPage": {
+    "title": "Our Transport Services",
+    "subtitle": "We offer a wide range of logistics solutions for your business",
+    "packages": {
+      "title": "Package Delivery",
+      "description": "Reliable delivery of packages with focus on speed and safety. We ensure that your packages are handled with the utmost care and arrive on time."
+    },
+    "freight": {
+      "title": "Commercial Freight",
+      "description": "Professional transport of commercial goods and pallets. Our drivers are experienced in safely transporting heavy and voluminous freights."
+    },
+    "newspapers": {
+      "title": "Newspaper Delivery",
+      "description": "Timely distribution of newspapers and magazines, every single day. We understand the importance of early delivery and guarantee reliable night distribution."
+    },
+    "urgent": {
+      "title": "Urgent Shipments",
+      "description": "Immediate action for your most urgent deliveries. Our couriers are available 24/7 to bring your goods directly to the destination without any intermediate stops."
+    }
+  },
+  "fleetPage": {
+    "title": "Our Modern Fleet",
+    "subtitle": "High-quality vehicles for all your transport needs",
+    "overview": "At Alasayl Transport, we have a diverse fleet of more than 15 modern vehicles. Our fleet is regularly maintained and meets the strictest environmental requirements (Euro 6), allowing us to provide sustainable and reliable services.",
+    "maintenance": {
+      "title": "Maintenance & Quality",
+      "feature1": "Regular checks",
+      "desc1": "Weekly technical inspections",
+      "feature2": "Euro 6 Standard",
+      "desc2": "Environmentally friendly vehicles",
+      "feature3": "GPS Tracking",
+      "desc3": "Real-time location management",
+      "feature4": "Hygiene",
+      "desc4": "Clean loading spaces",
+      "feature5": "Safety",
+      "desc5": "Advanced safety systems",
+      "feature6": "Roadside Assistance",
+      "desc6": "24/7 support on the go"
+    }
+  },
+  "forms": {
+    "quote": {
+      "title": "Request a Quote",
+      "success": "Thank you! We will contact you as soon as possible.",
+      "error": "Something went wrong. Please try again.",
+      "submit": "Request Quote",
+      "submitting": "Sending...",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "address": "Address",
+        "cargoType": "Cargo Type",
+        "weight": "Weight (kg)",
+        "pickup": "Pickup Location",
+        "delivery": "Delivery Location",
+        "date": "Transport Date",
+        "service": "Service Type",
+        "notes": "Extra Notes",
+        "normal": "Normal",
+        "urgent": "Urgent"
+      },
+      "validation": {
+        "name": "Name is too short",
+        "email": "Invalid email address",
+        "required": "This field is required",
+        "address": "Address is too short",
+        "cargo": "Cargo type is too short",
+        "location": "Location is too short",
+        "date": "Date must be in the future"
+      }
+    },
+    "contact": {
+      "title": "Send us a message",
+      "success": "Thank you for your message! We will contact you soon.",
+      "error": "Something went wrong sending. Please try again later.",
+      "submit": "Send Message",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Your Message"
+      },
+      "validation": {
+        "message": "Message is too short"
+      }
+    },
+    "career": {
+      "title": "Join Our Team",
+      "success": "Your application has been sent! We will contact you soon.",
+      "error": "Something went wrong sending. Please try again later.",
+      "submit": "Submit Application",
+      "submitting": "Sending...",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "position": "Position",
+        "cv": "Upload CV",
+        "coverLetter": "Cover Letter (Optional)"
+      },
+      "positions": {
+        "driver": "Driver / Delivery"
+      },
+      "validation": {
+        "name": "Name is too short",
+        "email": "Invalid email address",
+        "phone": "Phone number must be at least 10 digits",
+        "required": "This field is required",
+        "coverLetter": "Cover letter is too long",
+        "fileSize": "File size must be less than 5MB",
+        "fileType": "Only PDF files are allowed"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "info": {
+      "address": {
+        "title": "Address",
+        "line1": "Sleedoornstraat 23",
+        "line2": "6101MS Echt, Netherlands"
+      },
+      "phone": {
+        "title": "Phone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Mon-Sat: 07:00 - 18:00",
+        "sunday": "Sunday: Closed"
+      }
+    }
+  },
+  "careersPage": {
+    "title": "Join Our Team",
+    "subtitle": "Word deel van ons groeiende team",
+    "intro": {
+      "title": "Join Our Team!",
+      "description": "At Alasayl Transport we look for motivated professionals who want to contribute to our growth. We offer a dynamic work environment with good working conditions and growth opportunities."
+    },
+    "driver": {
+      "description": "We are looking for reliable drivers for our growing fleet.",
+      "requirementsTitle": "Requirements:",
+      "benefitsTitle": "We offer:",
+      "requirements": [
+        "Valid category B driving license",
+        "Experience with delivery vans",
+        "Good knowledge of Dutch roads",
+        "Customer-friendly attitude",
+        "Flexible work attitude"
+      ],
+      "benefits": [
+        "Competitive salary",
+        "Modern vehicles (Mercedes-Benz)",
+        "Fixed work days (6 days per week)",
+        "Professional work environment",
+        "Growth opportunities"
+      ]
+    },
+    "form": {
+      "title": "Apply Now",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "position": "Position",
+      "coverLetter": "Cover Letter (Optional)",
+      "cvUpload": "Upload CV (PDF, max 5MB)",
+      "submit": "Apply Now",
+      "success": "Your application has been received! We will contact you soon.",
+      "error": "Something went wrong. Please try again."
+    }
+  }
+}

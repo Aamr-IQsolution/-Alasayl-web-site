@@ -1,0 +1,291 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "fleet": "Vloot",
+    "contact": "Contact",
+    "careers": "Werken Bij Ons"
+  },
+  "common": {
+    "learnMore": "Meer Informatie",
+    "contactUs": "Neem Contact Op"
+  },
+  "newsBar": {
+    "item1": "Betrouwbaar transport door heel Nederland",
+    "item2": "Snelle offerte binnen 24 uur",
+    "item3": "24/7 ondersteuning voor zakelijke klanten"
+  },
+  "hero": {
+    "title": "Betrouwbaar Goederenvervoer in Nederland",
+    "subtitle": "Professionele transportdiensten met meer dan 15 voertuigen, gespecialiseerd in pakketbezorging en vrachtvervoer.",
+    "ctaPrimary": "Vraag Offerte Aan",
+    "ctaSecondary": "Over Ons"
+  },
+  "services": {
+    "title": "Onze Diensten",
+    "viewAll": "Bekijk Alle Diensten",
+    "packages": {
+      "title": "Pakketbezorging",
+      "description": "Snelle en betrouwbare pakketbezorging voor bedrijven en particulieren"
+    },
+    "freight": {
+      "title": "Commercieel Transport",
+      "description": "Professioneel vrachtvervoer voor commerciële goederen"
+    },
+    "newspapers": {
+      "title": "Krantenlevering",
+      "description": "Dagelijkse distributie van kranten en tijdschriften"
+    },
+    "urgent": {
+      "title": "Spoedleveringen",
+      "description": "Same-day service for dringende leveringen"
+    }
+  },
+  "stats": {
+    "vehicles": {
+      "label": "Voertuigen",
+      "description": "in de vloot"
+    },
+    "amazon": {
+      "label": "Jaren",
+      "description": "met Amazon"
+    },
+    "days": {
+      "label": "Dagen",
+      "description": "per week"
+    },
+    "partners": {
+      "label": "Partners",
+      "description": "Hoofdpartners"
+    }
+  },
+  "partners": {
+    "title": "Onze Partners",
+    "subtitle": "Wij werken samen met toonaangevende bedrijven",
+    "amazon": {
+      "description": "Partnerschap sinds 2 jaar met Amazon - volledige vloot voertuigen - langdurige ervaring in het professioneel oplossen van problemen"
+    },
+    "dhl": {
+      "description": "Betrouwbare partner voor snelle transportdiensten"
+    },
+    "spoota": {
+      "description": "Ontwikkeling van Lead-the-way-yz app speciaal voor Alasayl Transport"
+    }
+  },
+  "testimonials": {
+    "title": "Wat Onze Klanten Zeggen",
+    "testimonial1": {
+      "text": "Uitstekende service! Alasayl Transport is altijd betrouwbaar en op tijd. Zeer professioneel team."
+    },
+    "testimonial2": {
+      "text": "We werken al jaren samen en zijn zeer tevreden. Snelle communicatie en flexibele oplossingen."
+    },
+    "testimonial3": {
+      "text": "Betrouwbare partner voor ons bedrijf. Altijd correcte afhandeling en vriendelijke chauffeurs."
+    }
+  },
+  "fleet": {
+    "title": "Onze Vloot",
+    "subtitle": "Meer dan 15 moderne voertuigen voor al uw transportbehoeften",
+    "viewAll": "Bekijk Volledige Vloot"
+  },
+  "about": {
+    "title": "Over Alasayl Transport",
+    "subtitle": "Betrouwbaar transportbedrijf gevestigd in Echt, Limburg",
+    "company": {
+      "title": "Over Ons",
+      "description": "Alasayl Transport is een professioneel transportbedrijf gevestigd in Echt, Limburg. Met meer dan 15 voertuigen en jarenlange ervaring bieden wij betrouwbare goederenvervoer diensten in heel Nederland."
+    },
+    "mission": {
+      "title": "Onze Missie",
+      "text": "Het leveren van betrouwbare en efficiënte transportdiensten die de verwachtingen van onze klanten overtreffen."
+    },
+    "vision": {
+      "title": "Onze Visie",
+      "text": "Een toonaangevende transportpartner worden in Nederland en daarbuiten, met uitbreiding naar internationale markten."
+    },
+    "fleet": {
+      "title": "Onze Vloot"
+    },
+    "expansion": {
+      "title": "Uitbreiding naar Nieuwe Markten",
+      "description": "Alasayl Transport breidt uit! We zijn begonnen met het leveren van onze diensten in het Midden-Oosten en Saudi-Arabië, waarmee we onze internationale aanwezigheid versterken."
+    }
+  },
+  "servicesPage": {
+    "title": "Onze Transportdiensten",
+    "subtitle": "Wij bieden een breed scala aan logistieke oplossingen voor uw bedrijf",
+    "packages": {
+      "title": "Pakketbezorging",
+      "description": "Betrouwbare bezorging van pakketten met focus op snelheid en veiligheid. Wij zorgen ervoor dat uw pakketten met de grootste zorg worden behandeld en op tijd aankomen."
+    },
+    "freight": {
+      "title": "Commercieel Vrachtvervoer",
+      "description": "Professioneel transport van commerciële goederen en pallets. Onze chauffeurs zijn ervaren in het veilig vervoeren van zware en volumineuze vrachten."
+    },
+    "newspapers": {
+      "title": "Krantenlevering",
+      "description": "Tijdige distributie van kranten en tijdschriften, elke dag opnieuw. Wij begrijpen het belang van vroege levering en garanderen een betrouwbare nachtdistributie."
+    },
+    "urgent": {
+      "title": "Spoedleveringen",
+      "description": "Directe actie voor uw meest dringende zendingen. Onze koeriers staan 24/7 klaar om uw goederen zonder tussenstops direct naar de bestemming te brengen."
+    }
+  },
+  "fleetPage": {
+    "title": "Onze Moderne Vloot",
+    "subtitle": "Hoogwaardige voertuigen for al uw transportbehoeften",
+    "overview": "Bij Alasayl Transport beschikken we over een divers wagenpark van meer dan 15 moderne voertuigen. Onze vloot wordt regelmatig onderhouden en voldoet aan de strengste milieueisen (Euro 6), waardoor wij duurzame en betrouwbare diensten kunnen leveren.",
+    "maintenance": {
+      "title": "Onderhoud & Kwaliteit",
+      "feature1": "Regelmatige controles",
+      "desc1": "Wekelijkse technische inspecties",
+      "feature2": "Euro 6 Norm",
+      "desc2": "Milieuvriendelijke voertuigen",
+      "feature3": "GPS Tracking",
+      "desc3": "Real-time locatiebeheer",
+      "feature4": "Hygiëne",
+      "desc4": "Schone laadruimtes",
+      "feature5": "Veiligheid",
+      "desc5": "Geavanceerde veiligheidssystemen",
+      "feature6": "Pechhulp",
+      "desc6": "24/7 ondersteuning onderweg"
+    }
+  },
+  "forms": {
+    "quote": {
+      "title": "Offerte Aanvragen",
+      "success": "Bedankt! We nemen zo snel mogelijk contact op.",
+      "error": "Er ging iets mis. Probeer opnieuw.",
+      "submit": "Offerte Aanvragen",
+      "submitting": "Verzenden...",
+      "fields": {
+        "name": "Volledige Naam",
+        "email": "E-mailadres",
+        "phone": "Telefoonnummer",
+        "address": "Adres",
+        "cargoType": "Type Goederen",
+        "weight": "Gewicht (kg)",
+        "pickup": "Ophaallocatie",
+        "delivery": "Afleverlocatie",
+        "date": "Transportdatum",
+        "service": "Service Type",
+        "notes": "Extra Opmerkingen",
+        "normal": "Normaal",
+        "urgent": "Spoed"
+      },
+      "validation": {
+        "name": "Naam is te kort",
+        "email": "Ongeldig e-mailadres",
+        "required": "Dit veld is verplicht",
+        "address": "Adres is te kort",
+        "cargo": "Type goederen is te kort",
+        "location": "Locatie is te kort",
+        "date": "Datum moet in de toekomst liggen"
+      }
+    },
+    "contact": {
+      "title": "Stuur ons een bericht",
+      "success": "Bedankt voor uw bericht! We nemen zo snel mogelijk contact op.",
+      "error": "Er ging iets mis bij het verzenden. Probeer het later opnieuw.",
+      "submit": "Bericht Verzenden",
+      "fields": {
+        "name": "Naam",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "message": "Uw Bericht"
+      },
+      "validation": {
+        "message": "Bericht is te kort"
+      }
+    },
+    "career": {
+      "title": "Werken Bij Ons",
+      "success": "Uw sollicitatie is verzonden! We nemen zo snel mogelijk contact op.",
+      "error": "Er ging iets mis bij het verzenden. Probeer het later opnieuw.",
+      "submit": "Solliciteer Nu",
+      "submitting": "Verzenden...",
+      "fields": {
+        "name": "Volledige Naam",
+        "email": "E-mailadres",
+        "phone": "Telefoonnummer",
+        "position": "Functie",
+        "cv": "CV Uploaden",
+        "coverLetter": "Motivatiebrief (Optioneel)"
+      },
+      "positions": {
+        "driver": "Chauffeur / Bezorger"
+      },
+      "validation": {
+        "name": "Naam is te kort",
+        "email": "Ongeldig e-mailadres",
+        "phone": "Telefoonnummer moet minimaal 10 cijfers bevatten",
+        "required": "Dit veld is verplicht",
+        "coverLetter": "Motivatiebrief is te lang",
+        "fileSize": "Bestand mag maximaal 5MB zijn",
+        "fileType": "Alleen PDF-bestanden zijn toegestaan"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Neem Contact Op",
+    "info": {
+      "address": {
+        "title": "Adres",
+        "line1": "Sleedoornstraat 23",
+        "line2": "6101MS Echt, Nederland"
+      },
+      "phone": {
+        "title": "Telefoon"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Openingstijden",
+        "weekdays": "Ma-Za: 07:00 - 18:00",
+        "sunday": "Zondag: Gesloten"
+      }
+    }
+  },
+  "careersPage": {
+    "title": "Werken Bij Alasayl",
+    "subtitle": "Word deel van ons groeiende team",
+    "intro": {
+      "title": "Word Deel van Ons Team!",
+      "description": "Bij Alasayl Transport zoeken we gemotiveerde professionals die willen bijdragen aan onze groei. We bieden een dynamische werkomgeving met goede arbeidsvoorwaarden en doorgroeimogelijkheden."
+    },
+    "driver": {
+      "description": "We zoeken betrouwbare chauffeurs for onze groeiende vloot.",
+      "requirementsTitle": "Vereisten:",
+      "benefitsTitle": "Wij bieden:",
+      "requirements": [
+        "Geldig rijbewijs categorie B",
+        "Ervaring met bestelwagens",
+        "Goede kennis van Nederlandse wegen",
+        "Klantvriendelijke instelling",
+        "Flexibele werkhouding"
+      ],
+      "benefits": [
+        "Competitief salaris",
+        "Moderne voertuigen (Mercedes-Benz)",
+        "Vaste werkdagen (6 dagen per week)",
+        "Professionele werkomgeving",
+        "Doorgroeimogelijkheden"
+      ]
+    },
+    "form": {
+      "title": "Solliciteer Nu",
+      "name": "Volledige Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "position": "Gewenste Functie",
+      "coverLetter": "Motivatiebrief (optioneel)",
+      "cvUpload": "Upload CV (PDF, max 5MB)",
+      "submit": "Solliciteer Nu",
+      "success": "Uw sollicitatie is ontvangen! We nemen spoedig contact op.",
+      "error": "Er ging iets mis. Probeer opnieuw."
+    }
+  }
+}
