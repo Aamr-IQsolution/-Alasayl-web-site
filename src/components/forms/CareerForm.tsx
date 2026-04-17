@@ -142,9 +142,7 @@ export default function CareerForm() {
             }}
           />
           {errors.cvFile && (
-            <p className="mt-1 text-xs text-red-500">
-              {errors.cvFile.type === "application/pdf" ? commonT("validation.fileSize") : commonT("validation.fileType")}
-            </p>
+            <p className="mt-1 text-xs text-red-500">{commonT("validation.fileType")}</p>
           )}
         </div>
 

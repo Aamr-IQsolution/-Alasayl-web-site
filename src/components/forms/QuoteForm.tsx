@@ -17,7 +17,7 @@ const quoteSchema = z.object({
   phone: z.string().min(1, "validation.required"),
   address: z.string().min(5, "validation.address"),
   cargoType: z.string().min(3, "validation.cargo"),
-  weight: z.preprocess((val) => Number(val), z.number().min(1, "validation.required")),
+  weight: z.coerce.number().min(1, "validation.required"),
   pickupLocation: z.string().min(5, "validation.location"),
   deliveryLocation: z.string().min(5, "validation.location"),
   transportDate: z.string().refine((date) => new Date(date) > new Date(), {

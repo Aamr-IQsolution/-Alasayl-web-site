@@ -1,27 +1,21 @@
-import { ChangeEvent } from "react";
+import { InputHTMLAttributes } from "react";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
-interface InputProps {
-  type?: string;
-  placeholder?: string;
-  value: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, "id"> {
   error?: string;
   label?: string;
-  name?: string;
   id?: string;
 }
 
 export default function Input({
   type = "text",
-  placeholder,
-  value,
-  onChange,
   error,
   label,
   name,
   id,
+  className,
+  ...props
 }: InputProps) {
   const inputId = id ?? name;
 
@@ -37,9 +31,6 @@ export default function Input({
         id={inputId}
         name={name}
         type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
         className={twMerge(
           clsx(
             "w-full rounded-lg border bg-white px-4 py-3 text-sm text-zinc-900",
@@ -48,8 +39,10 @@ export default function Input({
             error
               ? "border-red-500 focus:border-red-500 focus:ring-red-200"
               : "border-zinc-300 focus:border-primary focus:ring-primary/20"
-          )
+          ),
+          className
         )}
+        {...props}
       />
 
       {error ? <p className="mt-1 text-sm text-red-600">{error}</p> : null}

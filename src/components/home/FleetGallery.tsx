@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { Truck } from "lucide-react";
-import Card from "@/components/ui/Card";
 import MyButton from "@/components/ui/Button"; 
 import { Link } from "@/navigation";
 

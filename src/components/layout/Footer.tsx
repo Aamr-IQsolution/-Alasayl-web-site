@@ -1,13 +1,9 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { Link } from "@/navigation";
 import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 
-type SupportedLocale = "nl" | "ar" | "en";
-
 export default function Footer() {
-
   const quickLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },

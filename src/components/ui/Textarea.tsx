@@ -1,29 +1,21 @@
-import { ChangeEvent } from "react";
+import { TextareaHTMLAttributes } from "react";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
-interface TextareaProps {
-  placeholder?: string;
-  value: string;
-  onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+interface TextareaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, "id"> {
   error?: string;
   label?: string;
-  rows?: number;
-  maxLength?: number;
-  name?: string;
   id?: string;
 }
 
 export default function Textarea({
-  placeholder,
-  value,
-  onChange,
   error,
   label,
   rows = 5,
-  maxLength,
   name,
   id,
+  className,
+  ...props
 }: TextareaProps) {
   const textareaId = id ?? name;
 
@@ -38,11 +30,7 @@ export default function Textarea({
       <textarea
         id={textareaId}
         name={name}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
         rows={rows}
-        maxLength={maxLength}
         className={twMerge(
           clsx(
             "w-full rounded-lg border bg-white px-4 py-3 text-sm text-zinc-900",
@@ -51,8 +39,10 @@ export default function Textarea({
             error
               ? "border-red-500 focus:border-red-500 focus:ring-red-200"
               : "border-zinc-300 focus:border-primary focus:ring-primary/20"
-          )
+          ),
+          className
         )}
+        {...props}
       />
 
       {error ? <p className="mt-1 text-sm text-red-600">{error}</p> : null}

@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import { SelectHTMLAttributes } from "react";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -7,24 +7,21 @@ interface SelectOption {
   value: string;
 }
 
-interface SelectProps {
+interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, "id" | "children"> {
   options: SelectOption[];
-  value: string;
-  onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
   error?: string;
   label?: string;
-  name?: string;
   id?: string;
 }
 
 export default function Select({
   options,
-  value,
-  onChange,
   error,
   label,
   name,
   id,
+  className,
+  ...props
 }: SelectProps) {
   const selectId = id ?? name;
 
@@ -39,8 +36,6 @@ export default function Select({
       <select
         id={selectId}
         name={name}
-        value={value}
-        onChange={onChange}
         className={twMerge(
           clsx(
             "w-full rounded-lg border bg-white px-4 py-3 text-sm text-zinc-900",
@@ -49,8 +44,10 @@ export default function Select({
             error
               ? "border-red-500 focus:border-red-500 focus:ring-red-200"
               : "border-zinc-300 focus:border-primary focus:ring-primary/20"
-          )
+          ),
+          className
         )}
+        {...props}
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>

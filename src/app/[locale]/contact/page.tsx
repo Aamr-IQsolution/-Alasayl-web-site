@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import QuoteForm from "@/components/forms/QuoteForm";
 import ContactForm from "@/components/forms/ContactForm";
-import Button from "@/components/ui/Button";
 
 export default function ContactPage() {
   const t = useTranslations("contactPage");
