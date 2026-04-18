@@ -363,6 +363,10 @@ export default config
    - ✅ تصميم متجاوب ممتاز
    - ✅ تجربة مستخدم حديثة
 
+4. **دعم RTL (RTL Support):**
+   - ✅ استخدام `dir="ltr"` لأرقام الهواتف لضمان العرض الصحيح في الواجهة العربية.
+   - ✅ توافق الأيقونات والمسافات مع اتجاه النص العربي.
+
 ### نقاط التوقف (Breakpoints)
 
 | الجهاز | العرض | الاستخدام |
@@ -407,15 +411,16 @@ export default config
 **المحتوى:**
 - **العنوان الرئيسي (NL):** "Betrouwbaar Goederenvervoer in Nederland"
 - **العنوان الفرعي:** "Professionele transportdiensten met meer dan 15 voertuigen, gespecialiseerd in pakketbezorging en vrachtvervoer."
-- **صورة الخلفية:** hero-main.jpg (1920x1080)
+- **الخلفية:** فيديو خلفية كامل (`/images/videos/hero-video.mp4`) مع طبقة تعتيم متدرجة (Dark Overlay) لضمان وضوح النصوص.
 - **أزرار CTA:**
-  - `"Vraag Offerte Aan"` → يوجه لـ `/contact#quote-form`
+  - `"Vraag Offerte Aan"` → يوجه لـ `/contact#quote`
   - `"Over Ons"` → يوجه لـ `/about`
 - **أزرار التواصل السريع:**
   - WhatsApp: `https://wa.me/31622665522`
-  - Phone: `tel:+31622665522`
+  - Phone: `tel:+31622665522` (مع تثبيت الاتجاه `dir="ltr"` للغات RTL)
 
 **المكون:** `HeroSection.tsx`
+- **ملاحظة تصميمية:** تم إضافة `drop-shadow-lg` للعناوين وتأثيرات `backdrop-blur` للأزرار الثانوية.
 
 ---
 
@@ -473,23 +478,22 @@ export default config
 
 ##### E. Testimonials Section
 
-**المحتوى:** 3-4 شهادات عملاء (Carousel)
+**المحتوى:** 3 شهادات عملاء مع صور حقيقية.
 
 **نموذج الشهادة:**
 ```json
 {
+  "id": 1,
   "name": "Jan de Vries",
   "company": "ABC Logistics",
   "rating": 5,
-  "text": "Uitstekende service! Alasayl Transport is altijd betrouwbaar en op tijd.",
-  "image": "testimonial-1.jpg"
+  "text": "testimonial1.text",
+  "image": "/images/testimonial/testimonial-1.png"
 }
 ```
 
 **المكون:** `TestimonialsSection.tsx`
-
-> [!warning] ملاحظة
-> الشهادات الأولية ستكون نموذجية (dummy data) - يتم استبدالها بشهادات حقيقية لاحقاً.
+- **ملاحظة:** تم استبدال نظام الحروف الأولى (Initials) بنظام صور حقيقية باستخدام مكون `Image` من Next.js لتحسين الأداء والمظهر، مع إضافة إطار دائري `rounded-full border-2`.
 
 ---
 
@@ -507,6 +511,18 @@ export default config
 **المكون:** `FleetGallery.tsx`
 
 **زر الإجراء:** `"Bekijk Onze Vloot"` → `/fleet`
+
+##### G. AxonXcode Announcement
+
+**المحتوى:** قسم تعريفي بشراكة الأصايل مع شركة AxonXcode لعام 2025.
+
+**العناصر:**
+- **البادئة:** "NEW 2025" / "جديد 2025".
+- **اللوجو:** `axonxcode-logo-medium.png` مع تأثير نبض `animate-pulse-slow`.
+- **المميزات:** شبكة مميزات (Features Grid) تعرض 4 نقاط قوة.
+- **التصميم:** خلفية متدرجة حديثة (Cyan to Magenta) مع تأثيرات `blur` و `backdrop-blur`.
+
+**المكون:** `AxonXcodeAnnouncement.tsx`
 
 ---
 
@@ -2337,11 +2353,11 @@ next-env.d.ts
 
 ### المرحلة 3: الصفحة الرئيسية (أسبوع 2)
 
-- [ ] Hero Section
-  - [ ] Background image
-  - [ ] Heading + subheading
-  - [ ] CTA buttons
-  - [ ] Quick contact buttons
+- [x] Hero Section
+  - [x] فيديو خلفية (Video Background)
+  - [x] Heading + subheading مع ظلال
+  - [x] CTA buttons مع تأثيرات hover
+  - [x] Quick contact buttons مع دعم RTL
 - [ ] Services Section
   - [ ] 4 service cards
   - [ ] Icons (Lucide)
@@ -2353,14 +2369,15 @@ next-env.d.ts
   - [ ] 3 partner logos
   - [ ] Descriptions
   - [ ] Grid layout
-- [ ] Testimonials Section
-  - [ ] Carousel (Swiper)
-  - [ ] 3-4 dummy testimonials
-  - [ ] Star ratings
+- [x] Testimonials Section
+  - [x] Carousel (Swiper)
+  - [x] استخدام صور حقيقية (Next Image)
+  - [x] Star ratings
 - [ ] Fleet Gallery
   - [ ] Image carousel
   - [ ] 5-6 vehicle images
   - [ ] Navigation arrows
+- [x] AxonXcode Announcement Section
 
 ### المرحلة 4: الصفحات الأخرى (أسبوع 2-3)
 
