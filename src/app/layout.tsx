@@ -22,6 +22,28 @@ export const metadata: Metadata = {
     email: false,
     address: false,
   },
+  openGraph: {
+    title: "Alasayl Transport",
+    description: "Professioneel goederenvervoer in Nederland.",
+    url: "https://alasayl.nl",
+    siteName: "Alasayl Transport",
+    locale: "nl_NL",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo/logo-full.png",
+        width: 1200,
+        height: 630,
+        alt: "Alasayl Transport",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alasayl Transport",
+    description: "Professioneel goederenvervoer in Nederland.",
+    images: ["/images/logo/logo-full.png"],
+  },
 };
 
 export default function RootLayout({

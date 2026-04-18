@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/navigation";
 import clsx from "clsx";
 import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 
 const supportedLocales = ["nl", "ar", "en"] as const;
 type SupportedLocale = (typeof supportedLocales)[number];
@@ -57,8 +58,16 @@ export default function Header() {
           locale === "ar" && "flex-row-reverse"
         )}
       >
-        <Link href="/" className="text-lg font-semibold text-primary">
-          Alasayl
+        <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Image
+            src="/images/logo/logo-full.png"
+            alt="Alasayl Transport Logo"
+            width={140}
+            height={45}
+            priority
+            quality={90}
+            className="h-10 w-auto"
+          />
         </Link>
 
         <nav className="hidden flex-1 items-center justify-center gap-1 md:flex">

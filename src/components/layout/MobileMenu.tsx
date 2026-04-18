@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/navigation";
 import clsx from "clsx";
+import Image from "next/image";
 
 const supportedLocales = ["nl", "ar", "en"] as const;
 type SupportedLocale = (typeof supportedLocales)[number];
@@ -71,7 +72,14 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         )}
       >
         <div className="mb-6 flex items-center justify-between">
-          <span className="text-base font-semibold text-primary">Menu</span>
+          <Image
+            src="/images/logo/logo-full.png"
+            alt="Alasayl Transport"
+            width={120}
+            height={38}
+            quality={90}
+            className="h-8 w-auto"
+          />
           <button
             type="button"
             onClick={onClose}

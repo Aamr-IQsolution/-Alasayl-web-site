@@ -2,6 +2,7 @@
 
 import { Link } from "@/navigation";
 import { Facebook, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const quickLinks = [
@@ -25,7 +26,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-lg font-semibold text-primary">Alasayl</h3>
+            <Image
+              src="/images/logo/logo-full.png"
+              alt="Alasayl Transport"
+              width={140}
+              height={45}
+              quality={90}
+              className="h-10 w-auto mb-3"
+            />
             <p className="mt-3 text-sm leading-6 text-zinc-600">
               Professional transport services across the Netherlands, focused on speed,
               reliability and customer care.
