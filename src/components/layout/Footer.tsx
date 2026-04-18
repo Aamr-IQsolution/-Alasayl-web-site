@@ -47,6 +47,20 @@ export default function Footer() {
                 <Mail className="h-4 w-4" />
               </a>
             </div>
+            <div className="mt-6 pt-6 border-t border-zinc-200">
+              <h4 className="text-sm font-semibold text-zinc-900 mb-3">
+                Our Companies
+              </h4>
+              <ul className="space-y-2 text-sm text-zinc-600">
+                <li>• Alasayl Transport</li>
+                <li>
+                  • AxonXcode 
+                  <span className="ml-2 text-xs bg-cyan-100 text-cyan-800 px-2 py-0.5 rounded">
+                    NEW
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div>

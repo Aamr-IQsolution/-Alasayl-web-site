@@ -62,15 +62,21 @@
   },
   "partners": {
     "title": "Our Partners",
-    "subtitle": "We work with leading companies",
+    "subtitle": "Trusted by leading companies",
     "amazon": {
-      "description": "Partnership since 2 years with Amazon - full fleet of vehicles - long experience in professional problem solving"
+      "name": "Amazon",
+      "description": "Partnership since 2 years - full fleet - long experience"
     },
     "dhl": {
-      "description": "Reliable partner for fast transport services"
+      "name": "DHL",
+      "description": "Trusted partner in fast transport services"
     },
     "spoota": {
-      "description": "Development of Lead-the-way-yz app specially for Alasayl Transport"
+      "name": "Spoota",
+      "description": "Development of Lead-the-way-yz app by Alasayl"
+    },
+    "axonxcode": {
+      "description": "Software & Web Development - Part of Alasayl Group since 2025"
     }
   },
   "testimonials": {
@@ -372,5 +378,19 @@
         "cvRequired": "Please upload your CV (PDF)"
       }
     }
+  },
+  "axonxcodeAnnouncement": {
+    "newsBar": "🎉 Big Step: Alasayl has acquired AxonXcode - Software & Web Development now under our roof!",
+    "title": "Alasayl Transport Expands into Software Development",
+    "subtitle": "AxonXcode is now part of the Alasayl Group",
+    "description": "We are excited to announce that Alasayl Transport has acquired AxonXcode, a leading software and web development company. This strategic acquisition marks our expansion into the technology sector and enables us to provide innovative digital solutions alongside our transport services.",
+    "features": {
+      "feature1": "Software & Web Development",
+      "feature2": "Mobile App Development",
+      "feature3": "Digital Solutions",
+      "feature4": "Part of Alasayl Group"
+    },
+    "cta": "Visit AxonXcode Website",
+    "badge": "New at Alasayl"
   }
 }

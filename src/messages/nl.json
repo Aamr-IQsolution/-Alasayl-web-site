@@ -62,15 +62,21 @@
   },
   "partners": {
     "title": "Onze Partners",
-    "subtitle": "Wij werken samen met toonaangevende bedrijven",
+    "subtitle": "Vertrouwd door toonaangevende bedrijven",
     "amazon": {
-      "description": "Partnerschap sinds 2 jaar met Amazon - volledige vloot voertuigen - langdurige ervaring in het professioneel oplossen van problemen"
+      "name": "Amazon",
+      "description": "Samenwerking sinds 2 jaar - volledige vloot - lange ervaring"
     },
     "dhl": {
-      "description": "Betrouwbare partner voor snelle transportdiensten"
+      "name": "DHL",
+      "description": "Vertrouwde partner in snelle transportdiensten"
     },
     "spoota": {
-      "description": "Ontwikkeling van Lead-the-way-yz app speciaal voor Alasayl Transport"
+      "name": "Spoota",
+      "description": "Ontwikkeling van Lead-the-way-yz app door Alasayl"
+    },
+    "axonxcode": {
+      "description": "Software & Web Development - Onderdeel van de Alasayl Groep sinds 2025"
     }
   },
   "testimonials": {
@@ -372,5 +378,19 @@
         "cvRequired": "Upload uw CV (PDF)"
       }
     }
+  },
+  "axonxcodeAnnouncement": {
+    "newsBar": "🎉 Grote Stap: Alasayl heeft AxonXcode overgenomen - Software & Web Development nu onder ons dak!",
+    "title": "Alasayl Transport breidt uit naar Software Development",
+    "subtitle": "AxonXcode is nu onderdeel van de Alasayl Groep",
+    "description": "We zijn verheugd aan te kondigen dat Alasayl Transport AxonXcode heeft overgenomen, een toonaangevend software- en webontwikkelingsbedrijf. Deze strategische overname markeert onze uitbreiding naar de technologiesector en stelt ons in staat om innovatieve digitale oplossingen te bieden naast onze transportdiensten.",
+    "features": {
+      "feature1": "Software & Web Development",
+      "feature2": "Mobile App Development",
+      "feature3": "Digital Solutions",
+      "feature4": "Part of Alasayl Group"
+    },
+    "cta": "Bezoek AxonXcode Website",
+    "badge": "Nieuw bij Alasayl"
   }
 }
