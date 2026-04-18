@@ -33,7 +33,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-zinc-900">{t("info.phone.title")}</h3>
-                <p className="text-gray-600" suppressHydrationWarning>+31 6 2266 5522</p>
+                <p className="text-gray-600" suppressHydrationWarning dir="ltr">+31 6 2266 5522</p>
               </div>
             </div>
 

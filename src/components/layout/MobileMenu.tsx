@@ -140,7 +140,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             href="tel:+31622665522"
             className="inline-flex items-center justify-center rounded-lg border border-primary px-3 py-2 text-sm font-medium text-primary transition-colors duration-200 hover:bg-primary/10"
           >
-            +31 622 665 522
+            <span dir="ltr">+31 622 665 522</span>
           </a>
         </div>
       </aside>

@@ -73,7 +73,7 @@ export default function HeroSection() {
             className="flex items-center gap-2 text-sm font-medium text-white transition-all hover:text-secondary drop-shadow-md"
           >
             <Phone className="h-5 w-5 text-secondary" />
-            <span>+31 622 665 522</span>
+            <span dir="ltr">+31 622 665 522</span>
           </a>
         </div>
       </div>
