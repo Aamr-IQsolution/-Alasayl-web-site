@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { CheckCircle } from "lucide-react";
 import Card from "@/components/ui/Card";
+import Image from "next/image";
 
 export default function FleetPage() {
   const t = useTranslations("fleetPage");
@@ -14,6 +15,42 @@ export default function FleetPage() {
     { title: t("maintenance.feature4"), desc: t("maintenance.desc4") },
     { title: t("maintenance.feature5"), desc: t("maintenance.desc5") },
     { title: t("maintenance.feature6"), desc: t("maintenance.desc6") },
+  ];
+
+  const sprinterImages = [
+    {
+      src: '/images/fleet/sprinter-side.jpg',
+      alt: 'Mercedes-Benz Sprinter - Zijaanzicht',
+      caption: 'Zijaanzicht'
+    },
+    {
+      src: '/images/fleet/sprinter-front.jpg',
+      alt: 'Mercedes-Benz Sprinter - Vooraanzicht',
+      caption: 'Vooraanzicht'
+    },
+    {
+      src: '/images/fleet/sprinter-action.jpg',
+      alt: 'Mercedes-Benz Sprinter in actie',
+      caption: 'In Actie'
+    },
+    {
+      src: '/images/fleet/sprinter-interior.jpg',
+      alt: 'Mercedes-Benz Sprinter laadruimte',
+      caption: 'Laadruimte'
+    }
+  ];
+
+  const vitoImages = [
+    {
+      src: '/images/fleet/vito-side.jpg',
+      alt: 'Mercedes-Benz Vito - Zijaanzicht',
+      caption: 'Zijaanzicht'
+    },
+    {
+      src: '/images/fleet/vito-urban.jpg',
+      alt: 'Mercedes-Benz Vito in stad',
+      caption: 'Stadsbezorging'
+    }
   ];
 
   return (
@@ -92,11 +129,22 @@ export default function FleetPage() {
             </div>
           </div>
           
-          {/* Image Gallery Placeholders */}
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-video rounded-lg bg-gray-100 flex items-center justify-center border border-zinc-200">
-                <span className="text-xs text-zinc-400">Sprinter Photo {i}</span>
+          {/* Image Gallery */}
+          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {sprinterImages.map((image, index) => (
+              <div key={index} className="group relative aspect-video overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  quality={85}
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <p className="text-sm font-semibold text-white">{image.caption}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -164,11 +212,22 @@ export default function FleetPage() {
             </div>
           </div>
           
-          {/* Image Gallery Placeholders */}
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="aspect-video rounded-lg bg-gray-100 flex items-center justify-center border border-zinc-200">
-                <span className="text-xs text-zinc-400">Vito Photo {i}</span>
+          {/* Image Gallery */}
+          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {vitoImages.map((image, index) => (
+              <div key={index} className="group relative aspect-video overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  quality={85}
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <p className="text-sm font-semibold text-white">{image.caption}</p>
+                </div>
               </div>
             ))}
           </div>

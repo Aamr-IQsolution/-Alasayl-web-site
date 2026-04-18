@@ -1,13 +1,13 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
-interface CardProps {
+interface CardProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   className?: string;
 }
 
-export default function Card({ children, className }: CardProps) {
+export default function Card({ children, className, ...props }: CardProps) {
   return (
     <div
       className={twMerge(
@@ -16,6 +16,7 @@ export default function Card({ children, className }: CardProps) {
           className
         )
       )}
+      {...props}
     >
       {children}
     </div>
