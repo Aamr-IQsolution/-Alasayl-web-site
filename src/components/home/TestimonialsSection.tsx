@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Star } from "lucide-react";
 import Card from "@/components/ui/Card";
 
@@ -14,7 +15,7 @@ export default function TestimonialsSection() {
       company: "ABC Logistics",
       rating: 5,
       text: t("testimonial1.text"),
-      initials: "JV",
+      image: "/images/testimonial/testimonial-1.png",
     },
     {
       id: 2,
@@ -22,7 +23,7 @@ export default function TestimonialsSection() {
       company: "Transport Solutions BV",
       rating: 5,
       text: t("testimonial2.text"),
-      initials: "MJ",
+      image: "/images/testimonial/testimonial-2.png",
     },
     {
       id: 3,
@@ -30,7 +31,7 @@ export default function TestimonialsSection() {
       company: "Global Trade Corp",
       rating: 5,
       text: t("testimonial3.text"),
-      initials: "AH",
+      image: "/images/testimonial/testimonial-3.png",
     },
   ];
 
@@ -58,8 +59,15 @@ export default function TestimonialsSection() {
               </p>
 
               <div className="mt-auto flex items-center gap-3 border-t border-zinc-100 pt-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-bold">
-                  {testimonial.initials}
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-gray-200">
+                  <Image
+                    src={testimonial.image}
+                    alt={`${testimonial.name} - ${testimonial.company}`}
+                    fill
+                    sizes="48px"
+                    className="object-cover"
+                    quality={90}
+                  />
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-zinc-900">
