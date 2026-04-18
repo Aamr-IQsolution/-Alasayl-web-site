@@ -12,12 +12,28 @@ export default function HeroSection() {
     "inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 h-12 px-6 text-base w-full sm:w-auto";
 
   return (
-    <section className="relative flex min-h-[600px] flex-col items-center justify-center bg-gradient-to-b from-primary to-primary-dark px-4 py-20 text-center md:min-h-screen md:px-8">
-      <div className="mx-auto max-w-5xl">
-        <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+    <section className="relative flex min-h-[600px] flex-col items-center justify-center overflow-hidden px-4 py-20 text-center md:min-h-screen md:px-8">
+      
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src="/images/videos/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-5xl">
+        <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl drop-shadow-lg">
           {t("title")}
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-white/95 md:text-xl drop-shadow-md">
           {t("subtitle")}
         </p>
 
@@ -26,7 +42,7 @@ export default function HeroSection() {
             href="/contact#quote"
             className={clsx(
               btnBase,
-              "bg-secondary text-white hover:bg-secondary-dark focus-visible:ring-secondary/40"
+              "bg-secondary text-white hover:bg-secondary-dark focus-visible:ring-secondary/40 shadow-lg hover:shadow-xl hover:scale-105"
             )}
           >
             {t("ctaPrimary")}
@@ -35,26 +51,26 @@ export default function HeroSection() {
             href="/about"
             className={clsx(
               btnBase,
-              "border border-white text-white hover:bg-white/10 focus-visible:ring-white/30"
+              "border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 focus-visible:ring-white/30 shadow-lg"
             )}
           >
             {t("ctaSecondary")}
           </Link>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 border-t border-white/10 pt-8 sm:flex-row sm:gap-8">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 border-t border-white/20 pt-8 sm:flex-row sm:gap-8">
           <a
             href="https://wa.me/31622665522"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm font-medium text-white transition-opacity hover:opacity-80"
+            className="flex items-center gap-2 text-sm font-medium text-white transition-all hover:text-secondary drop-shadow-md"
           >
             <MessageCircle className="h-5 w-5 text-secondary" />
             <span>WhatsApp</span>
           </a>
           <a
             href="tel:+31622665522"
-            className="flex items-center gap-2 text-sm font-medium text-white transition-opacity hover:opacity-80"
+            className="flex items-center gap-2 text-sm font-medium text-white transition-all hover:text-secondary drop-shadow-md"
           >
             <Phone className="h-5 w-5 text-secondary" />
             <span>+31 622 665 522</span>
