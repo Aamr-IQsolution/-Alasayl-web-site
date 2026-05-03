@@ -15,7 +15,7 @@ export default function NewsBar() {
       {
         id: 4,
         text: t("axonxcodeAnnouncement.newsBar"),
-        logo: "/images/partners/axonxcode-logo-small.png",
+        logo: "/images/partners/axonxcode-logo-small-simple.png",
         special: true,
       },
     ],

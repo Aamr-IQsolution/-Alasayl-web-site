@@ -26,7 +26,7 @@ export default function PartnersSection() {
     },
     {
       name: "AxonXcode",
-      logo: "/images/partners/axonxcode-logo-large.png",
+      logo: "/images/partners/axonxcode-logo-large-simple.png",
       description: t("axonxcode.description"),
       isNew: true,
       link: "https://www.axonxcode.com",
@@ -69,13 +69,13 @@ export default function PartnersSection() {
                 itemType="https://schema.org/Organization"
                 className={`p-8 relative transition-all duration-300 h-full ${
                   partner.isNew 
-                    ? "border-2 border-transparent bg-gradient-to-b from-white to-white bg-clip-padding before:absolute before:inset-0 before:-z-10 before:rounded-[inherit] before:bg-gradient-to-br before:from-[#00D4FF] before:to-[#FF00FF] hover:shadow-xl hover:scale-[1.02]" 
+                    ? "border-2 border-transparent bg-gradient-to-b from-white to-white bg-clip-padding before:absolute before:inset-0 before:-z-10 before:rounded-[inherit] before:bg-gradient-to-br before:from-[#3B82F6] before:to-[#1E3A8A] hover:shadow-xl hover:scale-[1.02]" 
                     : "hover:shadow-lg"
                 }`}
               >
                 {partner.isNew && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                    <span className="bg-gradient-to-r from-[#00D4FF] to-[#FF00FF] text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap uppercase tracking-wider">
+                    <span className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap uppercase tracking-wider">
                       NEW 2025
                     </span>
                   </div>
@@ -83,7 +83,7 @@ export default function PartnersSection() {
                 
                 <div className={`flex w-full items-center justify-center rounded-xl border border-gray-100 bg-white mx-auto overflow-hidden p-6 transition-all duration-300 aspect-[3/2] ${
                   partner.isNew 
-                    ? "ring-2 ring-cyan-100" 
+                    ? "ring-2 ring-blue-100" 
                     : "grayscale opacity-70 hover:grayscale-0 hover:opacity-100 shadow-sm hover:shadow-md hover:bg-gray-50"
                 }`}>
                   <Image
@@ -115,7 +115,7 @@ export default function PartnersSection() {
 
                 {partner.isNew && (
                   <div className="mt-4 pt-4 border-t border-gray-100">
-                    <span className="text-xs font-semibold text-[#FF00FF]">
+                    <span className="text-xs font-semibold text-[#1E40AF]">
                       Visit Website →
                     </span>
                   </div>

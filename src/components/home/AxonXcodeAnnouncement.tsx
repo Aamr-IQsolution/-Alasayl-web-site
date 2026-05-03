@@ -10,7 +10,7 @@ export default function AxonXcodeAnnouncement() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#00D4FF] to-[#FF00FF] shadow-2xl">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#3B82F6] via-[#2563EB] to-[#1E3A8A] shadow-2xl">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 -mt-20 -mr-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 -mb-20 -ml-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
@@ -25,7 +25,7 @@ export default function AxonXcodeAnnouncement() {
               <div className="absolute -inset-1 rounded-2xl bg-white/20 blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
               <div className="relative animate-pulse-slow">
                 <Image
-                  src="/images/partners/axonxcode-logo-medium.png"
+                  src="/images/partners/axonxcode-logo-medium-simple.png"
                   alt="AxonXcode Logo"
                   width={320}
                   height={160}
@@ -46,7 +46,7 @@ export default function AxonXcodeAnnouncement() {
               {t("title")}
             </h2>
             
-            <h3 className="text-xl md:text-2xl font-bold text-cyan-100 mb-6 opacity-90">
+            <h3 className="text-xl md:text-2xl font-bold text-blue-100 mb-6 opacity-90">
               {t("subtitle")}
             </h3>
             
@@ -77,7 +77,7 @@ export default function AxonXcodeAnnouncement() {
             >
               <Button 
                 size="lg" 
-                className="bg-white text-[#1E90FF] hover:bg-cyan-50 border-none shadow-lg text-lg px-10 group w-full"
+                className="bg-white text-[#1E40AF] hover:bg-blue-50 border-none shadow-lg text-lg px-10 group w-full"
               >
                 {t("cta")}
                 <ExternalLink className="ml-2 h-5 w-5 rtl:mr-2 rtl:ml-0 transition-transform group-hover:translate-x-1" />
